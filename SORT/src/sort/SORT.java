@@ -12,7 +12,7 @@ public class SORT {
         }
     }
     public static int partes(int[] arr, int menor, int mayor){
-        int pivot = arr[mayor];
+        int pivot = arr[ mayor ];
         int i = menor -1;
         
         for (int j = menor; j<mayor; j++){
@@ -25,5 +25,10 @@ public class SORT {
         return i + 1;
     }
     
+    public static void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
     
 }
