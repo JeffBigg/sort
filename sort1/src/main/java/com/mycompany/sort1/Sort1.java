@@ -14,13 +14,13 @@ public class Sort1 {
         
         int [] array={12,6,16,10,4,14,2};
         
-        System.out.println("ARAY DESORDENADO");
+        System.out.println("ARAY DESORDENADO ASI COMO VIVES ");
              
         impArray(array);
         
         Sort(array,0,array.length -1);
         
-         System.out.println("ARAY ORDENADO");
+         System.out.println("ARAY ORDENADO ASI ES COMO DEBE ESTAR  ");
              
         impArray(array);
         
@@ -53,10 +53,15 @@ public class Sort1 {
     array[i] = array[j];
     array[j] = temp;
 }
-   
-   
+    
+    
+    public static void impArray(int[] array) {
+    for (int num : array) {
+        System.out.print(num + "  ");
+    }
+    System.out.println();
 }
-    
-    
 
- 
+}
+
+  
