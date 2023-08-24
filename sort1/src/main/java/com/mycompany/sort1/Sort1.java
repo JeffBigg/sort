@@ -27,4 +27,12 @@ public class Sort1 {
         
         
     }
+    public static void Sort(int[] array, int low, int high) {
+    if (low < high) {
+        int pivotIndex = dividir(array, low, high);
+        Sort(array, low, pivotIndex - 1);
+        Sort(array, pivotIndex + 1, high);
+    }
+    
 }
+ 
