@@ -11,7 +11,20 @@ package com.mycompany.sort1;
 public class Sort1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("jeanasdsakdksad");
+        
+        int [] array={12,6,16,10,4,14,2};
+        
+        System.out.println("ARAY DESORDENADO");
+             
+        impArray(array);
+        
+        Sort(array,0,array.length -1);
+        
+         System.out.println("ARAY ORDENADO");
+             
+        impArray(array);
+        
+        
+        
     }
 }
