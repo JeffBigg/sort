@@ -44,10 +44,15 @@ public class Sort1 {
             cambio(array, i, j);
         }
     }
-    
     cambio(array, i + 1, high);
     return i + 1;
-    }
+    
+    
+    }public static void cambio(int[] array, int i, int j) {
+    int temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+}
    
    
 }
