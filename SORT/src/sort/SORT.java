@@ -31,4 +31,16 @@ public class SORT {
         arr[j] = temp;
     }
     
+    public static void main(String[] args){
+        int[]  arr = {4,5,7,23,6,8,12,6,13};
+        int n = arr.length;
+        
+        quicksort(arr,0, n -1);
+        System.out.println("arreglo ordenado");
+        
+        for (int num :arr){
+            System.out.println(num + " ");
+        }
+    }
+    
 }
